@@ -24,6 +24,10 @@ function listaDeAmigos(){
 }
 
 function sortearAmigo(){
+    if(!amigos.length){
+        alert("A lista de nomes está vazia! Adicione nomes para realizar o sorteio.");
+        return;
+    }
     let numeroAleatorio = Math.floor(Math.random() * amigos.length);
     let resultado = document.getElementById("resultado");
     resultado.innerHTML = "";
