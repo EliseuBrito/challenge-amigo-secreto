@@ -22,3 +22,10 @@ function listaDeAmigos(){
         });
     }
 }
+
+function sortearAmigo(){
+    let numeroAleatorio = Math.floor(Math.random() * amigos.length);
+    let resultado = document.getElementById("resultado");
+    resultado.innerHTML = "";
+    resultado.textContent = amigos[numeroAleatorio];
+}
